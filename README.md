@@ -1,4 +1,4 @@
-###Torrent Magnet Link Scrapper Bot
+#Torrent Magnet Link Scrapper Bot
 A telegram bot which Gives You the magnet link of any torrent you want to download From 1337x.to
 
 <hr>
