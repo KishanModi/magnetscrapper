@@ -71,7 +71,10 @@ bot.set_webhook(url='https://[Heroku Website NAME HERE].herokuapp.com/' + bot_to
 ```
 #### Deploy The bot to heroku
 ```
+$ heroku login
 $ git init
+$ heroku git:clone -a your_App_name
+$ cd your_app_name
 $ git add .
 $ git commit -am "make it better"
 $ git push heroku main
