@@ -1,5 +1,5 @@
-#Torrent Magnet Link Scrapper Bot
-A telegram bot which Gives You the magnet link of any torrent you want to download From 1337x.to
+### Torrent Magnet Link Scrapper Bot
+## A telegram bot which Gives You the magnet link of any torrent you want to download From 1337x.to
 
 <hr>
 
@@ -9,9 +9,9 @@ A telegram bot which Gives You the magnet link of any torrent you want to downlo
 
 ### Instructions
 
-#### Following method works same for linux,win,android(termux)
+## Following method works same for linux,win,android(termux)
 
-Get the package
+# Get the package
 ```
 $ git clone https://github.com/kishanmodi/magnetscrapper
 ```
@@ -20,11 +20,10 @@ $ git clone https://github.com/kishanmodi/magnetscrapper
 $ cd magnetscrapper
 ```
 
-Install required packages
+# Install required packages
 ```
 $ pip install -r requirements.txt
 ```
-once it's done setup `BOT_TOKEN`
 - Get your bot token from [BotFather](https://telegram.me/BotFather)
 
 Set Bot token in Python
@@ -35,39 +34,41 @@ Set Bot token in Python
 ```
 
 ### Follow this to run this bot on local machine
-- Remove Comment from the following parts of the code
+
+# Remove Comment from the following parts of the code
 - #Local Web browser part
 - #bot Polling 
 
-- Comment Out the following parts of the code
+# Comment Out the following parts of the code
 - #webhooks
 - #Online Web browser/chrome driver
 
-Once its finished start the script! and Relax!
+# Once its finished start the script! and Relax!
 ```
 $ python bot.py
 ```
 
 ### Follow this to run this bot on heroku server
+
 - Install Heroku cli
 - go to heroku.com and create a new account than create a new app
 - add bellow mentioned config vars and bulidpacks
-BulidPacks
+# BulidPacks
 ```
 heroku/python
 https://github.com/heroku/heroku-buildpack-google-chrome
 https://github.com/heroku/heroku-buildpack-chromedriver
 ```
-Config Vars
+# Config Vars
 ```
 key: CHROMEDRIVER_PATH, value: /app/.chromedriver/bin/chromedriver
 key: GOOGLE_CHROME_BIN, value: /app/.apt/usr/bin/google-chrome
 ```
-Add your heroku website in your code
+# Add your heroku website in your code
 ```
 bot.set_webhook(url='https://[Heroku Website NAME HERE].herokuapp.com/' + bot_token)
 ```
-Deploy The bot to heroku
+## Deploy The bot to heroku
 ```
 $ git init
 $ git add .
