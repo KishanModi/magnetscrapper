@@ -24,7 +24,7 @@ $ cd magnetscrapper
 ```
 $ pip install -r requirements.txt
 ```
-- Get your bot token from [BotFather](https://telegram.me/BotFather)
+#### Get your bot token from [BotFather](https://telegram.me/BotFather)
 
 ### Set Bot token in Python
 ```
@@ -35,7 +35,7 @@ $ pip install -r requirements.txt
 
 ## Follow this to run this bot on local machine
 
-# Remove Comment from the following parts of the code
+#### Remove Comment from the following parts of the code
 - #Local Web browser part
 - #bot Polling 
 
@@ -69,7 +69,7 @@ key: GOOGLE_CHROME_BIN, value: /app/.apt/usr/bin/google-chrome
 ```
 bot.set_webhook(url='https://[Heroku Website NAME HERE].herokuapp.com/' + bot_token)
 ```
-### Deploy The bot to heroku
+#### Deploy The bot to heroku
 ```
 $ git init
 $ git add .
