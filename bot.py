@@ -21,7 +21,7 @@ chrome_options.binary_location = CHROME_PATH
 driver = webdriver.Chrome(executable_path=CHROMEDRIVER_PATH,chrome_options=chrome_options)
 '''
 
-bot_token ="1214469450:AAGBb_JuNQ2EdKCrkbbfoHUDPExJMhVH_cU"
+bot_token ="Your Bot Token Here"
 bot = telebot.TeleBot(token=bot_token)
 
 server = Flask(__name__)
@@ -77,7 +77,7 @@ def getMessage():
 @server.route("/")
 def webhook():
     bot.remove_webhook()
-    bot.set_webhook(url='https://magnetscrapper.herokuapp.com/' + bot_token)
+    bot.set_webhook(url='https://[Heroku Website NAME HERE].herokuapp.com/' + bot_token)
     return "!", 200
 
 if __name__ == "__main__":
