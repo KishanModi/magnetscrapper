@@ -1,6 +1,6 @@
-import telebot,time
+import telebot,time,request
 from selenium import webdriver
-from flask import Flask, request
+from flask import Flask
 
 #Add Your Telegram Bot Token Here
 bot_token ="Your Bot Token Here"
@@ -48,13 +48,12 @@ def at_answer(message):
             driver.find_element_by_xpath(path).click()
             time.sleep(3)
             gg =driver.find_element_by_xpath("//div/div[2]/div[1]/ul[1]")
-            href = gg.find_element_by_tag_name('a').get_attribute("href")  
+            href = gg.find_element_by_tag_name('a').get_attribute("href")
             name= driver.find_element_by_tag_name('h1') 
-            x = len(name.text)
-            na = name.text[0:x-2]  
+            nameofthetorrent = name.text[0:len(name.text)-2]  
             driver.get(url)
             i+=1
-            bot.send_message(message.chat.id,text = "*_`{}`_* \n\n__`{}`__ ".format(na,href),parse_mode='MarkdownV2') #Sends the top 3 magnet link with name of the torrent
+            bot.send_message(message.chat.id,text = "*_`{}`_* \n\n__`{}`__ ".format(nameofthetorrent,href),parse_mode='MarkdownV2') #Sends the top 3 magnet link with name of the torrent
     except:
         bot.send_message(message.chat.id,"No Torrent Available")
 
@@ -72,8 +71,7 @@ def webhook():
 if __name__ == "__main__":
     server.run(host="0.0.0.0", port=int(os.environ.get('PORT', 5000)))
     
-    
-    
+       
 '''
 #bot Polling (remove comments from this part if you want to run this code on your local machine
 while True:
