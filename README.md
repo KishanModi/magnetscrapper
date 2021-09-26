@@ -5,7 +5,7 @@
 
 ## Requirements
 - Get [Python](https://python.org)
-- Git
+- [Git](https://git-scm.com/)
 
 ## Instructions
 
@@ -22,7 +22,7 @@ $ cd magnetscrapper
 
 ### Install required packages
 ```
-$ pip install -r requirements.txt
+$ pip3 install -r requirements.txt
 ```
 #### Get your bot token from [BotFather](https://telegram.me/BotFather)
 
@@ -36,12 +36,12 @@ $ pip install -r requirements.txt
 ## Follow this to run this bot on local machine
 
 #### Remove Comment from the following parts of the code
-- #Local Web browser part
-- #bot Polling 
+- Local Web browser part
+- bot Polling 
 
 #### Comment Out the following parts of the code
-- #webhooks
-- #Online Web browser/chrome driver
+- webhooks
+- Online Web browser/chrome driver
 
 #### Once its finished start the script! and Relax!
 ```
