@@ -52,7 +52,7 @@ $ python bot.py
 - Install Heroku cli
 - go to heroku.com and create a new account than create a new app
 
-- [![Deploy](https://www.herokucdn.com/deploy/button.svg "Deploy to Heroku")](https://heroku.com/deploy?template=https://github.com/KishanModi/magnetscrapper/main)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg "Deploy to Heroku")](https://heroku.com/deploy?template=https://github.com/KishanModi/magnetscrapper/main)
 
 - add bellow mentioned config vars and bulidpacks
 
