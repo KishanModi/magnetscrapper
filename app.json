@@ -1,0 +1,12 @@
+{
+  "name": "Magnet Scrapper",
+  "description": "⚡ Can Be used to scrap magnet link from 1337x.to with the use of simple Telegram Bot.",
+  "repository": "https://github.com/KishanModi/magnetscrapper/",
+  "keywords": ["github", "bot", "readme","Telegram","TelegramBot","Telegrambotapi","python","automatation"],
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
