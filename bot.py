@@ -34,6 +34,13 @@ def send_welcome(message):
 @bot.message_handler(commands=['help'])
 def send_help(message):
     bot.reply_to(message,'Send Movie With Year That it was released To get better result...')
+@bot.message_handler(commands=['broadcast'])
+def broadcast(message):
+    if message.chat.id==418305384:
+        bot.send_message(message.chat.id, text='Hi!')
+    else:
+        bot.send_message(message.chat.id, text='You do not have permission to use this command')
+
 
 #this is main message handler it will receive input from any user if it's not empty it will run the at_answer function
 @bot.message_handler(func = lambda msg: msg.text!="")
